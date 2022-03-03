@@ -1,0 +1,33 @@
+body {
+    background-image: url(imagenes/556562.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#superior {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid;
+    justify-content: center;
+}
+#avatarAang {
+    border: 1px solid;
+}
+#avatarAang img{
+    width: 250px;
+    margin-top: 100px;
+}
+#zukoLord{
+    border: 1px solid;
+}
+#zukoLord img{
+    width: 300px;
+    margin-top: 100px;
+}
+
+.caracter{
+    margin: 40px;
+}
+#botonPrincipal{
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
