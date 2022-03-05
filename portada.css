@@ -1,5 +1,9 @@
 body{
-    background-image: url(imagenes/1182541.jpg);
+    background-image: url(imagenes/1163366.jpg);
     background-size: cover;
-    background-position: cover;
+}
+.boton{
+    width: 250px;
+    height: 200px;
+    background-position: center;
 }

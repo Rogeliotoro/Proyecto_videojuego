@@ -34,4 +34,25 @@ body {
 .eslogan{
     background-color: bisque;
 }
+.estadisticas{
+    width: 206px;
+    border: 1px solid;
+    border-color: aliceblue;
+}
+.vida{
+    font: 18pt arial;
+    font-weight: bold;
+    color: azure;
+}
+.hpVida{
+    width: 200px;
+    height: 30px;
+    border: 3px solid;
+    border-color: black;
+}
+.hpBar{
+    width: 200px;
+    height: 30px;
+    background-color: green;
+}
 
