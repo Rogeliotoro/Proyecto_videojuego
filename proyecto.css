@@ -30,6 +30,7 @@ body {
 #botonPrincipal{
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 .eslogan{
     background-color: bisque;
@@ -38,12 +39,13 @@ body {
     width: 206px;
     border: 1px solid;
     border-color: aliceblue;
-    
+    visibility: hidden;    
 }
 .vida{
     font: 18pt arial;
     font-weight: bold;
     color: azure;
+
 }
 .hpVida{
     width: 200px;
