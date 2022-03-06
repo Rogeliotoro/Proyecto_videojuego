@@ -38,7 +38,6 @@ body {
 }
 .estadisticas{
     width: 206px;
-    border: 1px solid;
     border-color: aliceblue;
     visibility: hidden; 
 
