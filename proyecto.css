@@ -38,13 +38,18 @@ body {
 .estadisticas{
     width: 206px;
     border: 1px solid;
-    border-color: aliceblue;
-    visibility: hidden;    
+    border-color: aliceblue;  
 }
 .vida{
     font: 18pt arial;
     font-weight: bold;
     color: azure;
+
+}
+.estadisticas button {
+    background-color: azure;
+    border: 2px solid;
+    border-color: black;
 
 }
 .hpVida{
