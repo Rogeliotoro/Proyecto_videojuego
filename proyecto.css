@@ -1,7 +1,223 @@
 body {
     background-image: url(imagenes/556562.jpg);
-    background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+#principal{
+    display: flex;
+    flex-direction: column;
+}
+
+.jugadores{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.aang{
+    width: 250px;
+}
+.zuko{
+    width: 300px;
+}
+.toph{
+    width: 200px;
+}
+.azula{
+    height: 200px;
+}
+
+.seleccionaJugador{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 45%;
+    left: 40%;
+
+}
+
+.seleccionaJugadorTexto{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 55px;
+    margin-top: 2em;
+    color: whitesmoke;  
+}
+
+.batalla{
+    width: 15em;
+    height: 25em;   
+}
+
+.batalla img{
+    width: 50%;
+    height: 50%;  
+}
+
+.vsJugador{
+    position: absolute;
+    top: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+#p1vs img{
+    width: 7em;
+    height: 15em;
+}
+
+#p2vs img{
+    width: 7em;
+    height: 15em;
+}
+
+.vsTextoDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.vsTexto{
+    font-family: get_schwifty;
+    font-size: 60px;
+    color: #69C8ecff;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.botonEmpezar{
+    display: flex;
+    margin-bottom: 2em;
+    padding: 7px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #69C8ecff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+.botonEmpezar:hover {background-color: #b7e4f9}
+  
+.botonEmpezar:active {
+    background-color:#69C8ecff;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+/* Hidden screens */
+
+
+#pantallaBatalla{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    top: 0%;
+}
+
+.peleaP1Boton{
+    display: flex;
+    margin-bottom: 2em;
+    padding: 7px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #69C8ecff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+.peleaP1Boton:hover {background-color: #b7e4f9}
+  
+.peleaP1Boton:active {
+    background-color:red;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+  
+.versus{
+    font-family: get_schwifty;
+    font-size: 60px;
+    color: #69C8ecff;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.peleaP2Boton{
+    display: flex;
+    margin-bottom: 2em;
+    padding: 7px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #69C8ecff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.peleaP2Boton:hover {background-color: #b7e4f9}
+  
+.peleaP2Boton:active {
+    background-color:red;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#vidaP1{
+    margin-top: 2em;
+    margin-left: 8em;
+}
+
+#vidaP2{
+    margin-top: 2em;
+    margin-left: 8em;
+}
+
+#imagenP1 img{
+    width: 25em;
+    height: 30em;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+#imagenP2 img{
+    width: 25em;
+    height: 30em;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.peleaP1Boton{
+    margin-left: 5em;
+}
+
+.peleaP2Boton{
+    margin-left: 5em;
+}
+
+#elGanadorEs{
+    margin-top: -10% ;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 60px;
 }
 
 
