@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="proyecto.css">
+</head>
+    <title>Juego de Lucha - Avatar</title>
+<body>
+    <div id="principal">
+        <div class="jugadores">
+            <div onclick="selectorJugadores('Jugador1')" class="batalla" id="batalla1">
+                <img src="./imagenes/avatar-the-last-airbender-aang.gif" alt="Aang">
+                <p>Aang</p>
+            </div>
+            <div onclick="characterSelect('Jugador2')" class="batalla" id="batalla1">
+                <img src="./imagenes/giphy.gif" alt="Zuko">
+                <p>Zuko</p>
+            </div>
+            <div onclick="characterSelect('Jugador3')" class="batalla" id="batalla1">
+                <img src="./imagenes/7d4.gif" alt="Toph">
+                <p>Toph</p>
+            </div>
+            <div onclick="characterSelect('Jugador4')" class="batalla" id="batalla1">
+                <img src="./imagenes/tumblr_m15y2w4jOU1qjf835o1_r1_500.gif" alt="Azula">
+                <p>Azula</p>
+            </div>
+        </div>
+         <div class="selectPlayer">
+            <h1 class="selectPlayerText">Select player</h1>
+         </div>
+         <div class="vsPlayers">
+            <div id="p1vs"></div>
+            <div class="vsTextDiv">
+                <p class="vsText">VS</p>
+                <button onclick="startGameClick()" class="startGameBtn">START</button>
+            </div>
+            <div id="p2vs"></div>
+         </div>
+    </div>
+    <div id="fightScreen">
+        
+        <div class="p1Fighting">
+            <progress value="100" id="healthBarP1" max= "100"></progress>
+            <div id="imageP1"></div>
+            <button class="fightP1Btn" onclick="attack(0)">FIGHT!</button>
+        </div>
+        <div class="versus">VS</div>
+        <div class="p2Fighting">
+            <progress value="100" id="healthBarP2"  max= "100"></progress>
+            <div id="imageP2"></div>
+            <button class="fightP2Btn" onclick="attack(1)">FIGHT!</button>
+        </div>
+    </div>
+    <div id="winnerText">
+        <p id="theWinnerIs"></p>
+    </div>
+    <script src="js/proyecto.js"></script>
+</body>
+</html>

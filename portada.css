@@ -9,4 +9,5 @@ body{
 .seleccionPersonaje{
     display: grid;
     border: 2px;
+    color: aliceblue;
 }
