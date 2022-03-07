@@ -1,7 +1,7 @@
-const botonPrincipal = document.getElementById('botonPrincipal');
-const estadisticas = document.getElementsByClassName('estadisticas');
-const aangHp = document.getElementById('aangHp');
-const zukoHp = document.getElementById('ZukoHp');
-const aangEstadisticas = document.getElementById ('aangEstadisticas');
-const zukoEstadisticas = document.getElementById ('zukoEstadisticas');
-const buttonStyle = document.getElementsByClassName('buttonStyle');
+let arrCharacter = [];
+let principal = document.getElementById('principal');
+let pantallaBatalla = document.getElementById('pantallaBatalla');
+let textoGanador = document.getElementById('textoGanador');
+let vidaP1 = document.getElementById('vidaP1');
+let vidaP2 = document.getElementById('vidaP2');
+let elGanadorEs = document.getElementById('elGanadorEs');
