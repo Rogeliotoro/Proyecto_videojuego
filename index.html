@@ -4,58 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Battalla de Elementos</title>
+    <title>Avatar-leyenda de Aang</title>
     <link rel="stylesheet" href="proyecto.css">
 </head>
 <body>
-    <div id="principal">
-        <div class="jugadores">
-            <div onclick="selectorJugadores('Jugador1')" class="batalla" id="batalla1">
-                <img src="./imagenes/avatar-the-last-airbender-aang.gif" alt="Aang">
+    <div id="pantallaPrincipal">
+        <h1 class="seleccionPersonajeTexto">Selecciona Personaje</h1>
+        <div class="selector">
+            <div onclick="seleccionJugador('Personaje1')" class="jugador" id="jugador1">
+                <img src="imagenes/avatar-the-last-airbender-aang.gif" alt="Aang">
                 <p>Aang</p>
             </div>
-            <div onclick="selectorJugadores('Jugador2')" class="batalla" id="batalla1">
+            <div onclick="seleccionJugador('Personaje2')" class="jugador" id="jugador1">
                 <img src="imagenes/giphy.gif" alt="Zuko">
                 <p>Zuko</p>
             </div>
-            <div onclick="selectorJugadores('Jugador3')" class="batalla" id="batalla1">
+            <div onclick="seleccionJugador('Personaje3')" class="jugador" id="jugador1">
                 <img src="imagenes/7d4.gif" alt="Toph">
                 <p>Toph</p>
             </div>
-            <div onclick="selectorJugadores('Jugador4')" class="batalla" id="batalla1">
+            <div onclick="seleccionJugador('Personaje4')" class="jugador" id="jugador1">
                 <img src="imagenes/tumblr_m15y2w4jOU1qjf835o1_r1_500.gif" alt="Azula">
                 <p>Azula</p>
             </div>
         </div>
-         <div class="seleccionaJugador">
-            <h1 class="seleccionaJugadorTexto">Selecciona Jugador</h1>
+         <div class="seleccionPersonaje">
          </div>
-         <div class="vsJugador">
-            <div id="p1vs"></div>
+         <div class="vsJugadores">
+            <div id="j1vs"></div>
             <div class="vsTextoDiv">
                 <p class="vsTexto">VS</p>
-                <button onclick="startGameClick()" class="botonEmpezar">EMPEZAR</button>
+                <button onclick="empezarJuego()" class="empezarJuegoBoton">Empezar</button>
             </div>
-            <div id="p2vs"></div>
+            <div id="j2vs"></div>
          </div>
     </div>
-    <div id="pantallaBatalla">
-        <div class="peleaP1Boton">
-            <progress value="100" id="vidaP1" max= "100"></progress>
-            <div id="imagenP1"></div>
-            <button class="peleaP1Boton" onclick="ataque(0)">ATAQUE</button>
+    <div id="pantallaBatalla">  
+        <div class="j1Batalla">
+            <progress value="100" id="vidaJ1" max= "100"></progress>
+            <div id="imagenJ1"></div>
+            <button class="ataqueJ1Boton" onclick="ataque(0)">ATAQUE!</button>
         </div>
         <div class="versus">VS</div>
-        <div class="peleaP2Boton">
-            <progress value="100" id="vidaP2"  max= "100"></progress>
-            <div id="imagenP2"></div>
-            <button class="peleaP2Boton" onclick="ataque(1)">ATAQUE</button>
+        <div class="j2Batalla">
+            <progress value="100" id="vidaJ2"  max= "100"></progress>
+            <div id="imagenJ2"></div>
+            <button class="ataqueJ2Boton" onclick="ataque(1)">ATAQUE!</button>
         </div>
     </div>
-    <div id="ganadorText">
+    <div id="textoGanador">
         <p id="elGanadorEs"></p>
     </div>
-    <script src="./js/main.js"></script>
+    <script src="js/proyecto.js"></script>
 </body>
 
 </html>

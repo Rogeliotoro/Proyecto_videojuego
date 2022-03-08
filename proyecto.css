@@ -5,12 +5,13 @@ body{
     background-attachment: fixed;
 }
 
-#principal{
+#pantallaPrincipal{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
 }
 
-.jugadores{
+.selector{
     
     display: flex;
     flex-direction: row;
@@ -21,7 +22,7 @@ body{
     margin-left: 10em;
 }
 
-.seleccionaJugador{
+.seleccionPersonaje{
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -30,41 +31,36 @@ body{
 
 }
 
-.seleccionaJugadorTexto{
-    font-family: Arial, Helvetica, sans-serif;
+.seleccionPersonajeTexto{
     text-align: center;
-    justify-content: center;
     font-size: 55px;
     margin-top: 2em;
-    color: rgb(204, 243, 166);
+    color: rgb(231, 240, 231);
 
     
 }
 
-.batalla{
+.jugador{
     width: 15em;
     height: 25em;
     
 }
 
-.batalla img{
+.jugador img{
     width: 50%;
     height: 50%;
     
 }
 
 
-@font-face {
-   font-family: 'Courier New', Courier, monospace;
-  }
 
 p{
-    font-family: get_schwifty;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
-    color: rgb(193, 240, 25);
+    color: rgb(242, 247, 242);
 }
 
-.vsJugador{
+.vsJugadores{
     position: absolute;
     top: 65%;
     display: flex;
@@ -73,12 +69,12 @@ p{
     width: 100%;
 
 }
-#p1vs img{
+#j1vs img{
     width: 7em;
     height: 15em;
 }
 
-#p2vs img{
+#j2vs img{
     width: 7em;
     height: 15em;
 }
@@ -89,33 +85,26 @@ p{
 }
 
 .vsTexto{
-    font-family: get_schwifty;
     font-size: 60px;
-    color: #69C8ecff;
+    color: rgb(242, 245, 247);
     margin-left: 2em;
     margin-right: 2em;
 }
 
-.botonEmpezar{
-    display: flex;
+.empezarJuegoBoton{
     margin-bottom: 2em;
     padding: 7px 15px;
-    font-size: 24px;
+    font-size: 30px;
     cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
     color: #fff;
-    background-color: #69C8ecff;
+    background-color: rgb(224, 20, 37);
     border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
   }
   
-.botonEmpezar:hover {background-color: #b7e4f9}
+  .empezarJuegoBoton:hover {background-color: #b7e4f9}
   
-.botonEmpezar:active {
-    background-color:#69C8ecff;
+  .empezarJuegoBoton:active {
+    background-color:whitesmoke;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }
@@ -131,7 +120,7 @@ p{
 
 }
 
-.peleaP1Boton{
+.ataqueJ1Boton{
     display: flex;
     margin-bottom: 2em;
     padding: 7px 15px;
@@ -141,30 +130,23 @@ p{
     text-decoration: none;
     outline: none;
     color: #fff;
-    background-color: #69C8ecff;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-    margin-left: 5em;
-}
+    background-color: rgb(15, 38, 46);
+  }
+  .ataqueJ1Boton:hover {background-color: #b7e4f9}
   
-.peleaP1Boton:hover {background-color: #b7e4f9}
-  
-.peleaP1Botonactive {
-    background-color:red;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+  .ataqueJ1Boton:active {
+    background-color:rgb(230, 157, 22);
   }
   
 .versus{
-    font-family: get_schwifty;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 60px;
     color: #69C8ecff;
     margin-left: 2em;
     margin-right: 2em;
 }
 
-.peleaP2Boton{
+.ataqueJ2Boton{
     display: flex;
     margin-bottom: 2em;
     padding: 7px 15px;
@@ -174,61 +156,59 @@ p{
     text-decoration: none;
     outline: none;
     color: #fff;
-    background-color: #69C8ecff;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-    margin-left: 5em;
+    background-color: rgb(15, 38, 46);
+    
   }
   
-.peleaP2Boton:hover {background-color: #b7e4f9}
+  .ataqueJ2Boton:hover {background-color: #b7e4f9}
   
-.peleaP2Boton:active {
-    background-color:red;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+  .ataqueJ2Boton:active {
+    background-color:rgb(230, 157, 22)
   }
 
 
-#vidaP1{
-    margin-top: 2em;
-    margin-left: 8em;
+#vidaJ1{
+    margin-top: 5.5em;
+    margin-left: 7em;
+    background-color: rgb(28, 245, 28);
+
 }
 
-#vidaP2{
-    margin-top: 2em;
-    margin-left: 8em;
+#vidaJ2{
+    margin-top: 5.5em;
+    margin-left: 7em;
+    background-color: rgb(28, 245, 28);
 }
 
-#imagenP1 img{
-    width: 25em;
-    height: 30em;
+#imagenJ1 img{
+    width: 15em;
+    height: 20em;
     margin-top: 4em;
     margin-bottom: 4em;
 }
 
-#imagenP2 img{
-    width: 25em;
-    height: 30em;
+#imagenJ2 img{
+    width: 15em;
+    height: 20em;
     margin-top: 4em;
     margin-bottom: 4em;
 }
 
-.peleaP1Boton{
+.ataqueJ1Boton{
     margin-left: 5em;
 }
 
-.peleaP1Boton{
+.ataqueJ2Boton{
     margin-left: 5em;
 }
 
-#elGanadorEs{
-
+#ElGanadorEs{
     margin-top: -10% ;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     font-size: 60px;
 }
+
 
 
