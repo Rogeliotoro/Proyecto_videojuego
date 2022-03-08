@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battalla de Elementos</title>
     <link rel="stylesheet" href="proyecto.css">
 </head>
-    <title>Juego de Lucha - Avatar</title>
 <body>
     <div id="principal">
         <div class="jugadores">
             <div onclick="selectorJugadores('Jugador1')" class="batalla" id="batalla1">
-                <img src="./imagenes/avatar-the-last-airbender-aang.gif"class="aang" alt="Aang">
+                <img src="./imagenes/avatar-the-last-airbender-aang.gif" alt="Aang">
+                <p>Aang</p>
             </div>
             <div onclick="selectorJugadores('Jugador2')" class="batalla" id="batalla1">
-                <img src="./imagenes/giphy.gif" class="zuko" alt="Zuko">
-                
+                <img src="imagenes/giphy.gif" alt="Zuko">
+                <p>Zuko</p>
             </div>
             <div onclick="selectorJugadores('Jugador3')" class="batalla" id="batalla1">
-                <img src="./imagenes/7d4.gif" class="toph"alt="Toph">
-        
+                <img src="imagenes/7d4.gif" alt="Toph">
+                <p>Toph</p>
             </div>
             <div onclick="selectorJugadores('Jugador4')" class="batalla" id="batalla1">
-                <img src="./imagenes/tumblr_m15y2w4jOU1qjf835o1_r1_500.gif" class="azula" alt="Azula">
-                
+                <img src="imagenes/tumblr_m15y2w4jOU1qjf835o1_r1_500.gif" alt="Azula">
+                <p>Azula</p>
             </div>
         </div>
          <div class="seleccionaJugador">
@@ -39,22 +40,22 @@
          </div>
     </div>
     <div id="pantallaBatalla">
-        
-        <div class="p1Batalla">
+        <div class="peleaP1Boton">
             <progress value="100" id="vidaP1" max= "100"></progress>
             <div id="imagenP1"></div>
-            <button class="peleaP1Boton" onclick="attack(0)">ATAQUE</button>
+            <button class="peleaP1Boton" onclick="ataque(0)">ATAQUE</button>
         </div>
         <div class="versus">VS</div>
-        <div class="p2Batalla">
+        <div class="peleaP2Boton">
             <progress value="100" id="vidaP2"  max= "100"></progress>
             <div id="imagenP2"></div>
-            <button class="peleaP2Boton" onclick="attack(1)">ATAQUE</button>
+            <button class="peleaP2Boton" onclick="ataque(1)">ATAQUE</button>
         </div>
     </div>
-    <div id="textoGanador">
+    <div id="ganadorText">
         <p id="elGanadorEs"></p>
     </div>
-    <script src="js/proyecto.js"></script>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>

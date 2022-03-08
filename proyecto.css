@@ -1,5 +1,5 @@
-body {
-    background-image: url(imagenes/556562.jpg);
+body{
+    background: url(imagenes/556562.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -11,22 +11,14 @@ body {
 }
 
 .jugadores{
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
-}
-.aang{
-    width: 250px;
-}
-.zuko{
-    width: 300px;
-}
-.toph{
-    width: 200px;
-}
-.azula{
-    height: 200px;
+    margin-top: 7em;
+    width: 80%;
+    height: 45%;
+    margin-left: 10em;
 }
 
 .seleccionaJugador{
@@ -41,19 +33,35 @@ body {
 .seleccionaJugadorTexto{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    justify-content: center;
     font-size: 55px;
     margin-top: 2em;
-    color: whitesmoke;  
+    color: rgb(204, 243, 166);
+
+    
 }
 
 .batalla{
     width: 15em;
-    height: 25em;   
+    height: 25em;
+    
 }
 
 .batalla img{
     width: 50%;
-    height: 50%;  
+    height: 50%;
+    
+}
+
+
+@font-face {
+   font-family: 'Courier New', Courier, monospace;
+  }
+
+p{
+    font-family: get_schwifty;
+    font-size: 25px;
+    color: rgb(193, 240, 25);
 }
 
 .vsJugador{
@@ -63,6 +71,7 @@ body {
     flex-direction: row;
     justify-content: center;
     width: 100%;
+
 }
 #p1vs img{
     width: 7em;
@@ -111,9 +120,6 @@ body {
     transform: translateY(4px);
   }
 
-/* Hidden screens */
-
-
 #pantallaBatalla{
     width: 100%;
     height: 100%;
@@ -122,6 +128,7 @@ body {
     justify-content: center;
     position: absolute;
     top: 0%;
+
 }
 
 .peleaP1Boton{
@@ -138,15 +145,16 @@ body {
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #999;
-  }
+    margin-left: 5em;
+}
   
 .peleaP1Boton:hover {background-color: #b7e4f9}
   
-.peleaP1Boton:active {
+.peleaP1Botonactive {
     background-color:red;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
-}
+  }
   
 .versus{
     font-family: get_schwifty;
@@ -170,15 +178,17 @@ body {
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #999;
-}
-
+    margin-left: 5em;
+  }
+  
 .peleaP2Boton:hover {background-color: #b7e4f9}
   
 .peleaP2Boton:active {
     background-color:red;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
-}
+  }
+
 
 #vidaP1{
     margin-top: 2em;
@@ -208,11 +218,12 @@ body {
     margin-left: 5em;
 }
 
-.peleaP2Boton{
+.peleaP1Boton{
     margin-left: 5em;
 }
 
 #elGanadorEs{
+
     margin-top: -10% ;
     display: flex;
     justify-content: center;
