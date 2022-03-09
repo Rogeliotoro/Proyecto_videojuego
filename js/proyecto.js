@@ -21,13 +21,12 @@ class Personajes {
 pantallaBatallaDiv.style.visibility = 'hidden';
 ganadorDiv.style.visibility = 'hidden';
 
-
 let p1 = new Personajes("Aang", 10, 2, 100, 8, "El Ganador es Aang", "avatar-the-last-airbender-aang.gif");
-let p2 = new Personajes("Zuko", 4, 2, 100, 8, "El Ganador es Zuko", "giphy.gif");
-let p3 = new Personajes("Toph", 4, 2, 100, 8, "El Ganador es Toph", "7d4.gif");
-let p4 = new Personajes("Azula", 4, 2, 100, 8, "El Ganador es Azula", "tumblr_m15y2w4jOU1qjf835o1_r1_500.gif");
+let p2 = new Personajes("Zuko", 8, 2, 100, 8, "El Ganador es Zuko", "giphy.gif");
+let p3 = new Personajes("Toph", 12, 2, 100, 8, "El Ganador es Toph", "7d4.gif");
+let p4 = new Personajes("Azula", 15, 2, 100, 8, "El Ganador es Azula", "tumblr_m15y2w4jOU1qjf835o1_r1_500.gif");
 
-function seleccionJugador(character) {
+const seleccionJugador = (character) => {
     if (character == 'Personaje1') {
         mostrarPersonajes("avatar-the-last-airbender-aang.gif")
         arrayPersonajes.push(p1);
@@ -46,4 +45,25 @@ function seleccionJugador(character) {
     }
 }
 
+const mostrarPersonajes = (character) => {
+    if (arrayPersonajes.length < 2) {
+        if (arrayPersonajes.length == 1) {
+            let img = document.createElement('img');
+            img.src = './img/Jugador2/' + character;
+            document.getElementById('j2vs').appendChild(img)
+        } else {
+            let img = document.createElement('img');
+            img.src = './img/Jugador1/' + character;
+            document.getElementById('j1vs').appendChild(img)
+        }
+    }
+}
+
+
+
+const finish = (winner) => {
+    pantallaBatallaDiv.style.visibility = 'hidden';
+    ganadorDiv.style.visibility = 'visible';
+    textoGanador.textContent += arrayPersonajes[winner].frases;
+}
 

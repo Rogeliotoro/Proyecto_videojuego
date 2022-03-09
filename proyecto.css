@@ -12,7 +12,6 @@ body{
 }
 
 .selector{
-    
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -28,36 +27,29 @@ body{
     position: absolute;
     top: 45%;
     left: 40%;
-
 }
 
 .seleccionPersonajeTexto{
     text-align: center;
     font-size: 55px;
     margin-top: 2em;
-    color: rgb(231, 240, 231);
-
-    
+    color: rgb(231, 240, 231);  
 }
 
 .jugador{
     width: 15em;
-    height: 25em;
-    
+    height: 25em;  
 }
 
 .jugador img{
     width: 50%;
-    height: 50%;
-    
+    height: 50%;  
 }
-
-
 
 p{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    color: rgb(242, 247, 242);
+    font-size: 40px;
+    color: rgb(237, 250, 237);
 }
 
 .vsJugadores{
@@ -67,8 +59,8 @@ p{
     flex-direction: row;
     justify-content: center;
     width: 100%;
-
 }
+
 #j1vs img{
     width: 7em;
     height: 15em;
@@ -101,13 +93,13 @@ p{
     border: none;
   }
   
-  .empezarJuegoBoton:hover {background-color: #b7e4f9}
+.empezarJuegoBoton:hover {background-color: #b7e4f9}
   
-  .empezarJuegoBoton:active {
+.empezarJuegoBoton:active {
     background-color:whitesmoke;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
-  }
+}
 
 #pantallaBatalla{
     width: 100%;
@@ -117,7 +109,6 @@ p{
     justify-content: center;
     position: absolute;
     top: 0%;
-
 }
 
 .ataqueJ1Boton{
@@ -131,12 +122,13 @@ p{
     outline: none;
     color: #fff;
     background-color: rgb(15, 38, 46);
-  }
-  .ataqueJ1Boton:hover {background-color: #b7e4f9}
+}
+
+.ataqueJ1Boton:hover {background-color: #b7e4f9}
   
-  .ataqueJ1Boton:active {
+.ataqueJ1Boton:active {
     background-color:rgb(230, 157, 22);
-  }
+}
   
 .versus{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -156,28 +148,23 @@ p{
     text-decoration: none;
     outline: none;
     color: #fff;
-    background-color: rgb(15, 38, 46);
-    
-  }
+    background-color: rgb(15, 38, 46);  
+}
   
-  .ataqueJ2Boton:hover {background-color: #b7e4f9}
+.ataqueJ2Boton:hover {background-color: #b7e4f9}
   
-  .ataqueJ2Boton:active {
+.ataqueJ2Boton:active {
     background-color:rgb(230, 157, 22)
-  }
-
+}
 
 #vidaJ1{
     margin-top: 5.5em;
     margin-left: 7em;
-    background-color: rgb(28, 245, 28);
-
 }
 
 #vidaJ2{
     margin-top: 5.5em;
     margin-left: 7em;
-    background-color: rgb(28, 245, 28);
 }
 
 #imagenJ1 img{
@@ -207,7 +194,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    font-size: 60px;
+    font-size: 80px;
 }
 
 
