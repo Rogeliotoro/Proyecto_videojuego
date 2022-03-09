@@ -16,7 +16,7 @@ Mira **Deployment** para conocer como desplegar el proyecto.
 _No necesitas instalar nada, solo dar al click y disfrutar del juego_
 
 ```
-link
+https://rogeliotoro.github.io/Proyecto_videojuego/
 ```
 
 ## Ejecutando las pruebas ⚙️
